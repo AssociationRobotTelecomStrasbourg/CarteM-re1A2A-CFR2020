@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CFR2020_A)(type Legacy)(uri ${KIPRJMOD}/lib/CFR2020_A.lib)(options "")(descr ""))
+  (lib (name DEV-14058)(type Legacy)(uri ${KIPRJMOD}/lib/DEV-14058.lib)(options "")(descr ""))
+)
