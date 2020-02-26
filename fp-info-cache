@@ -1,4 +1,4 @@
-17649809917383567
+17667183697820172
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2212,12 +2212,33 @@ SMD 8540
 4
 4
 CFR2020_A
+SOT-23_DGS_Handsoldering
+SOT-23, Handsoldering
+SOT-23
+0
+3
+3
+CFR2020_A
+TEENSY3.2_RTS
+
+
+0
+33
+33
+CFR2020_A
 TMC2130_breakout
 
 
 0
 16
 16
+CFR2020_A
+Teensy3.6_RTS
+
+
+0
+53
+53
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -6089,6 +6110,20 @@ capacitor tantalum
 0
 2
 2
+Capteurs
+HW-125
+
+
+0
+6
+6
+Capteurs
+MPU-6050
+
+
+0
+8
+8
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
@@ -53115,6 +53150,41 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
+PI06
+HW-125
+
+
+0
+6
+6
+PI06
+MPU-6050
+
+
+0
+8
+8
+PI06
+MR45V200B
+
+
+0
+0
+0
+PI06
+MS4525DO
+
+
+0
+8
+8
+PI06
+TEENSY3.2_RTS
+
+
+0
+33
+33
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
 Analog BGA-28 4.0mm x 6.25mm package, pitch 0.4mm pad, based on https://www.analog.com/media/en/technical-documentation/data-sheets/8063fa.pdf
@@ -66793,6 +66863,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RTS
+TEENSY3.2_RTS
+
+
+0
+33
+33
 Relay_SMD
 Relay_DPDT_AXICOM_IMSeries_JLeg
 http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Specification+Or+Standard%7F108-98001%7FW5%7Fpdf%7FEnglish%7FENG_SS_108-98001_W5.pdf

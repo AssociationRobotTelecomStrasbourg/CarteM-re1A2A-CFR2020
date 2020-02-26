@@ -720,17 +720,11 @@ Text Label 10300 1950 0    50   ~ 0
 MOSI_mvnt
 Text Label 10300 1650 0    50   ~ 0
 MISO_mvnt
-Text Label 6700 1900 0    50   ~ 0
-CS_TMC1
-Text Label 6700 1500 0    50   ~ 0
-CS_TMC2
-Text Label 6700 1300 0    50   ~ 0
-DIR_TMC2
 Text Label 6700 1400 0    50   ~ 0
+CS_TMC2
+Text Label 6700 1500 0    50   ~ 0
 STEP_TMC2
-Text Label 6700 1700 0    50   ~ 0
-DIR_TMC1
-Text Label 6700 1800 0    50   ~ 0
+Text Label 6700 1600 0    50   ~ 0
 STEP_TMC1
 $Comp
 L power:+5V #PWR0135
@@ -820,10 +814,8 @@ F 3 "" H 9600 2350 50  0001 C CNN
 $EndComp
 Text Label 10300 1750 0    50   ~ 0
 CS_TMC2
-Text Label 6700 1600 0    50   ~ 0
+Text Label 6700 1300 0    50   ~ 0
 EN_TMC2
-Text Label 6700 2000 0    50   ~ 0
-EN_TMC1
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5E570BFB
@@ -1576,4 +1568,12 @@ F 3 "~" H 7550 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 900  5150
+Text Label 6700 1800 0    50   ~ 0
+EN_TMC1
+Text Label 6700 2000 0    50   ~ 0
+DIR_TMC1
+Text Label 6700 1700 0    50   ~ 0
+DIR_TMC2
+Text Label 6700 1900 0    50   ~ 0
+CS_TMC1
 $EndSCHEMATC
