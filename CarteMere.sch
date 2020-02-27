@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Carte-mère Robot"
-Date "2020-02-22"
-Rev "R1"
+Date "2020-02-26"
+Rev "R0"
 Comp "Robot Télécom Strasbourg"
 Comment1 "Arnaud Schlumberger"
 Comment2 ""
@@ -720,17 +720,11 @@ Text Label 10300 1950 0    50   ~ 0
 MOSI_mvnt
 Text Label 10300 1650 0    50   ~ 0
 MISO_mvnt
-Text Label 6700 1900 0    50   ~ 0
-CS_TMC1
-Text Label 6700 1500 0    50   ~ 0
-CS_TMC2
-Text Label 6700 1300 0    50   ~ 0
-DIR_TMC2
 Text Label 6700 1400 0    50   ~ 0
+CS_TMC2
+Text Label 6700 1500 0    50   ~ 0
 STEP_TMC2
-Text Label 6700 1700 0    50   ~ 0
-DIR_TMC1
-Text Label 6700 1800 0    50   ~ 0
+Text Label 6700 1600 0    50   ~ 0
 STEP_TMC1
 $Comp
 L power:+5V #PWR0135
@@ -820,10 +814,8 @@ F 3 "" H 9600 2350 50  0001 C CNN
 $EndComp
 Text Label 10300 1750 0    50   ~ 0
 CS_TMC2
-Text Label 6700 1600 0    50   ~ 0
+Text Label 6700 1300 0    50   ~ 0
 EN_TMC2
-Text Label 6700 2000 0    50   ~ 0
-EN_TMC1
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5E570BFB
@@ -1453,8 +1445,6 @@ NoConn ~ 5600 1300
 NoConn ~ 5600 1700
 NoConn ~ 5600 1800
 NoConn ~ 5600 1900
-NoConn ~ 6700 2200
-NoConn ~ 6700 2100
 NoConn ~ 6700 1200
 Text Label 10300 2050 0    50   ~ 0
 EN_TMC2
@@ -1464,8 +1454,6 @@ NoConn ~ 900  5450
 NoConn ~ 900  5550
 NoConn ~ 900  5650
 NoConn ~ 900  5750
-NoConn ~ 900  5850
-NoConn ~ 900  5950
 NoConn ~ 900  6050
 NoConn ~ 900  6150
 NoConn ~ 900  6250
@@ -1479,8 +1467,6 @@ NoConn ~ 2500 6550
 NoConn ~ 2500 6450
 NoConn ~ 2500 6350
 NoConn ~ 2500 6150
-NoConn ~ 2500 6050
-NoConn ~ 2500 5950
 NoConn ~ 2500 5850
 NoConn ~ 2500 5750
 NoConn ~ 2500 5450
@@ -1576,4 +1562,164 @@ F 3 "~" H 7550 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 900  5150
+Text Label 6700 1800 0    50   ~ 0
+EN_TMC1
+Text Label 6700 2000 0    50   ~ 0
+DIR_TMC1
+Text Label 6700 1700 0    50   ~ 0
+DIR_TMC2
+Text Label 6700 1900 0    50   ~ 0
+CS_TMC1
+$Comp
+L Device:LED D4
+U 1 1 5E56F434
+P 7750 1950
+F 0 "D4" H 7743 1695 50  0000 C CNN
+F 1 "LED" H 7743 1786 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7750 1950 50  0001 C CNN
+F 3 "~" H 7750 1950 50  0001 C CNN
+	1    7750 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E573E76
+P 7450 1950
+F 0 "R10" V 7243 1950 50  0000 C CNN
+F 1 "R" V 7334 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7380 1950 50  0001 C CNN
+F 3 "~" H 7450 1950 50  0001 C CNN
+	1    7450 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5E57A1AF
+P 7750 2300
+F 0 "D5" H 7743 2045 50  0000 C CNN
+F 1 "LED" H 7743 2136 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7750 2300 50  0001 C CNN
+F 3 "~" H 7750 2300 50  0001 C CNN
+	1    7750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E57A1B5
+P 7450 2300
+F 0 "R11" V 7243 2300 50  0000 C CNN
+F 1 "R" V 7334 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7380 2300 50  0001 C CNN
+F 3 "~" H 7450 2300 50  0001 C CNN
+	1    7450 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2100 7200 2100
+Wire Wire Line
+	7200 2100 7200 1950
+Wire Wire Line
+	7200 1950 7300 1950
+Wire Wire Line
+	7300 2300 7200 2300
+Wire Wire Line
+	7200 2300 7200 2200
+Wire Wire Line
+	7200 2200 6700 2200
+$Comp
+L power:GND #PWR03
+U 1 1 5E57D682
+P 7900 1950
+F 0 "#PWR03" H 7900 1700 50  0001 C CNN
+F 1 "GND" V 7905 1822 50  0000 R CNN
+F 2 "" H 7900 1950 50  0001 C CNN
+F 3 "" H 7900 1950 50  0001 C CNN
+	1    7900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E57DAA4
+P 7900 2300
+F 0 "#PWR04" H 7900 2050 50  0001 C CNN
+F 1 "GND" V 7905 2172 50  0000 R CNN
+F 2 "" H 7900 2300 50  0001 C CNN
+F 3 "" H 7900 2300 50  0001 C CNN
+	1    7900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E582664
+P 6450 3600
+F 0 "D2" H 6443 3345 50  0000 C CNN
+F 1 "LED" H 6443 3436 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6450 3600 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E58266A
+P 6150 3600
+F 0 "R8" V 5943 3600 50  0000 C CNN
+F 1 "R" V 6034 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 3600 50  0001 C CNN
+F 3 "~" H 6150 3600 50  0001 C CNN
+	1    6150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E583DC0
+P 6450 4000
+F 0 "D3" H 6443 3745 50  0000 C CNN
+F 1 "LED" H 6443 3836 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6450 4000 50  0001 C CNN
+F 3 "~" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E583DC6
+P 6150 4000
+F 0 "R9" V 5943 4000 50  0000 C CNN
+F 1 "R" V 6034 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E5850C3
+P 6600 3600
+F 0 "#PWR01" H 6600 3350 50  0001 C CNN
+F 1 "GND" H 6605 3427 50  0000 C CNN
+F 2 "" H 6600 3600 50  0001 C CNN
+F 3 "" H 6600 3600 50  0001 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E585F24
+P 6600 4000
+F 0 "#PWR02" H 6600 3750 50  0001 C CNN
+F 1 "GND" V 6605 3872 50  0000 R CNN
+F 2 "" H 6600 4000 50  0001 C CNN
+F 3 "" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	0    -1   -1   0   
+$EndComp
+Text Label 6000 3600 2    50   ~ 0
+LED_S1
+Text Label 900  5850 2    50   ~ 0
+LED_S1
+Text Label 900  5950 2    50   ~ 0
+LED_S2
+Text Label 6000 4000 2    50   ~ 0
+LED_S2
 $EndSCHEMATC
